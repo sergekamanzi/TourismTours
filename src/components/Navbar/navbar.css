@@ -1,0 +1,166 @@
+.main-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #1a2a44;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    height: 60px;
+  }
+  
+  .logo1 {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo1 img {
+    height: 130px;
+    width: auto;
+  }
+  
+  .nav-links ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 2rem;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links li a:hover {
+    color: #068061;
+  }
+  
+  .menu-icon {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+  }
+  
+  .menu-icon span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #fbf9f9;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+  }
+  
+  .close-icon {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    width: 30px;
+    height: 30px;
+  }
+  
+  .close-icon:before,
+  .close-icon:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+    border-radius: 3px;
+    top: 50%;
+    left: 0;
+  }
+  
+  .close-icon:before {
+    transform: rotate(45deg);
+  }
+  
+  .close-icon:after {
+    transform: rotate(-45deg);
+  }
+  
+  /* NEW - Call Us button container */
+  .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  /* NEW - Call Us button style */
+  .call-button {
+    background-color: #e64c00;
+    color: white;
+    border: none;
+    padding: 0.5rem 1.2rem;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .call-button:hover {
+    background-color: #8b3f19;
+  }
+  
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+    .menu-icon {
+      display: flex;
+    }
+  
+    .nav-links {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 250px;
+      height: 100vh;
+      background-color: #ffffff;
+      box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+      transition: right 0.3s ease;
+      z-index: 101;
+      padding: 3.5rem 1rem 1rem;
+    }
+  
+    .nav-links.active {
+      right: 0;
+    }
+  
+    .nav-links ul {
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+  
+    .nav-links li a {
+      color: black;
+    }
+  
+    .close-icon.active {
+      display: block;
+    }
+  
+    /* Hide Call Us button on small screens */
+    .call-button {
+      display: flex;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .logo1 img {
+      height: 100px;
+      width: auto;
+      margin-left: -30px;
+      margin-top: 10px;
+    }
+  }
+  
