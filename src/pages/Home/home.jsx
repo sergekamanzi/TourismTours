@@ -102,49 +102,67 @@ const Home = () => {
       <section className="explore-section">
         <div className="explore-header">
           <h2 className="explore-subtitle">Modern & Beautiful</h2>
-          <h1 className="explore-title">Special Offers & Discounts</h1>
+          <h1 className="explore-title">Special Places In Uganda</h1>
           <p className="explore-description">
-            Lorem ipsum dolor sit amet, ad mea porro integre, feugiat
-            efficientur vis eu, te sit illum dolorum. Fugit scriptorem mea at.
-            Ad eros invenire incorrupte nam, vim in mazim.
+            one of the most places to visit in Uganda, there are many places to visit.
           </p>
         </div>
         <div className="explore-container">
           <div className="explore-card">
             <img
-              src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=2073&auto=format&fit=crop"
+              src="/explore-wild.jpg"
               alt="Fiji Islands"
               className="explore-image"
             />
             <div className="explore-card-content">
-              <h3 className="explore-card-title">Fiji Islands Vacation</h3>
-              <p className="explore-card-subtitle">Fiji Island</p>
+              <h3 className="explore-card-title">Ugandan wild animals</h3>
+              <p className="explore-card-subtitle">Parks,Zoos</p>
             </div>
           </div>
           <div className="explore-card">
             <img
-              src="https://images.unsplash.com/photo-1587474260584-136574528ed5?q=80&w=2070&auto=format&fit=crop"
+              src="/explore-river.jpg"
               alt="Taj Mahal"
               className="explore-image"
             />
             <div className="explore-card-content">
-              <h3 className="explore-card-title">Taj Mahal Agra</h3>
-              <p className="explore-card-subtitle">India</p>
+              <h3 className="explore-card-title">Ugandan Rivers</h3>
+              <p className="explore-card-subtitle">Rivers,Lakes</p>
             </div>
           </div>
           <div className="explore-card">
             <img
-              src="https://images.unsplash.com/photo-1534239143101-1b1c627395c5?q=80&w=1974&auto=format&fit=crop"
+              src="/explore-beach.jpg"
               alt="Beach in Thailand"
               className="explore-image"
             />
             <div className="explore-card-content">
-              <h3 className="explore-card-title">Beach in February</h3>
-              <p className="explore-card-subtitle">Thailand</p>
+              <h3 className="explore-card-title">Summer Vibes</h3>
+              <p className="explore-card-subtitle">Beach</p>
             </div>
           </div>
         </div>
       </section>
+
+      {/* === Video Section === */}
+        <section className="video-section">
+          <div className="video-container">
+            <video
+              className="video-player"
+              autoPlay
+              loop
+              muted
+              playsInline
+              poster="/video-poster.jpg" // Fallback image if video fails to load
+            >
+              <source src="/uganda.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <div className="video-overlay">
+              <h1 className="video-title">Enjoy EuginiusTours</h1>
+            </div>
+          </div>
+        </section>
     </>
   );
 };
