@@ -1,5 +1,5 @@
 import React from 'react';
-import './Contact.css';
+import './contact.css';
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
 import logo from '/logo.png'; // Update this path to your actual logo location
 
