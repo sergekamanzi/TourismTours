@@ -1,16 +1,16 @@
 import React from 'react';
 import './Contact.css';
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
+import logo from '/logo.png'; // Update this path to your actual logo location
 
 const Contact = () => {
   return (
     <footer className="contact-section">
       <div className="contact-container">
         <div className="brand">
-          <h2>TRAVEL<span className="highlight">ER</span></h2>
+          <img src={logo} alt="Logo" className="logo" />
           <p>
-            Sed ipsum clita tempor ipsum ipsum amet sit ipsum lorem amet labore
-            rebum lorem ipsum dolor. No sed vero lorem dolor dolor
+           you can get in touch with us on the following social medias, and we will get back to you as soon as possible
           </p>
           <h4>FOLLOW US</h4>
           <div className="social-icons">
@@ -22,41 +22,35 @@ const Contact = () => {
         </div>
 
         <div className="links">
-          <h4>OUR SERVICES</h4>
+          <h4>Our SERVICES</h4>
           <ul>
-            <li>About</li>
-            <li>Destination</li>
-            <li>Services</li>
-            <li>Packages</li>
-            <li>Guides</li>
-            <li>Testimonial</li>
-            <li>Blog</li>
+            <li>Tour guide</li>
+            <li>safe journey</li>
+            <li>Reliance</li>
+            <li>Best Guides</li>
           </ul>
         </div>
 
         <div className="links">
-          <h4>USEFULL LINKS</h4>
+          <h4>Our LINKS</h4>
           <ul>
+            <li>Home</li>
             <li>About</li>
             <li>Destination</li>
-            <li>Services</li>
-            <li>Packages</li>
-            <li>Guides</li>
-            <li>Testimonial</li>
             <li>Blog</li>
+            <li>Contact</li>
           </ul>
         </div>
 
         <div className="contact-info">
           <h4>CONTACT US</h4>
-          <p><FaMapMarkerAlt /> 123 Street, New York, USA</p>
-          <p><FaPhoneAlt /> +012 345 67890</p>
-          <p><FaEnvelope /> mail@domain.com</p>
+          <p><FaMapMarkerAlt /> Kampala, Uganda</p>
+          <p><FaPhoneAlt />+256769999773</p>
+          <p><FaEnvelope />eugeniustours7@gmail.com</p>
         </div>
       </div>
       <div className="footer-bottom">
-        <p>Copyright © <span>Domain</span>. All Rights Reserved.</p>
-        <p>Designed by <span>HTML Codex</span></p>
+        <p>Copyright © <span>2025</span>. All Rights Reserved.</p>
       </div>
     </footer>
   );
