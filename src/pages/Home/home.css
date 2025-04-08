@@ -84,8 +84,7 @@
     right: 20px;
 }
 
-/* Responsive Styles */
-
+/* Responsive Styles for Hero Section */
 @media (max-width: 768px) {
     .hero-title {
         font-size: 2.5rem;
@@ -126,65 +125,218 @@
     }
 }
 
-
 /* =======================
    PILLAR SECTION
    ======================= */
 
 .pillar-section {
-  padding: 80px 20px;
-  background-color: #fff;
-  text-align: center;
+    padding: 80px 20px;
+    background-color: #fff;
+    text-align: center;
 }
 
 .pillar-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px;
 }
 
 .pillar-box {
-  flex: 1 1 200px;
-  max-width: 250px;
+    flex: 1 1 200px;
+    max-width: 250px;
 }
 
 .pillar-icon {
-  background-color: #ff671f;
-  color: white;
-  font-size: 2rem;
-  padding: 30px;
-  border-radius: 50%;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 20px;
+    background-color: #ff671f;
+    color: white;
+    font-size: 2rem;
+    padding: 30px;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 .pillar-box h3 {
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: #333;
-  margin-bottom: 10px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
 }
 
 .pillar-box p {
-  font-size: 1rem;
-  color: #555;
-  line-height: 1.5;
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
 }
 
 /* Responsive Pillar Section */
+@media (max-width: 768px) {
+    .pillar-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pillar-box {
+        max-width: 300px;
+    }
+}
+
+/* =======================
+   EXPLORE SECTION
+   ======================= */
+
+.explore-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.explore-header {
+    margin-bottom: 40px;
+}
+
+.explore-subtitle {
+    font-size: 1.2rem;
+    color: #ff671f;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.explore-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.explore-description {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.explore-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.explore-card {
+    position: relative;
+    flex: 1 1 300px;
+    max-width: 380px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.explore-card:hover {
+    transform: translateY(-5px);
+}
+
+.explore-image {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.explore-card-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.explore-card-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.explore-card-subtitle {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* Responsive Explore Section */
+@media (max-width: 1024px) {
+    .explore-card {
+        flex: 1 1 45%;
+        max-width: 45%;
+    }
+
+    .explore-image {
+        height: 200px;
+    }
+
+    .explore-card-title {
+        font-size: 1.3rem;
+    }
+
+    .explore-card-subtitle {
+        font-size: 0.9rem;
+    }
+}
 
 @media (max-width: 768px) {
-  .pillar-container {
-    flex-direction: column;
-    align-items: center;
-  }
+    .explore-title {
+        font-size: 2rem;
+    }
 
-  .pillar-box {
-    max-width: 300px;
-  }
+    .explore-description {
+        font-size: 0.9rem;
+    }
+
+    .explore-card {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .explore-image {
+        height: 300px;
+    }
+
+    .explore-card-title {
+        font-size: 1.5rem;
+    }
+
+    .explore-card-subtitle {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .explore-title {
+        font-size: 1.8rem;
+    }
+
+    .explore-description {
+        font-size: 0.85rem;
+    }
+
+    .explore-image {
+        height: 250px;
+    }
+
+    .explore-card-title {
+        font-size: 1.3rem;
+    }
+
+    .explore-card-subtitle {
+        font-size: 0.9rem;
+    }
 }
