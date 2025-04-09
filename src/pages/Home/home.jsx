@@ -56,10 +56,10 @@ const Home = () => {
             <div className="pillar-icon">
               <FaGem />
             </div>
-            <h3>Color it all</h3>
+            <h3>Wildlife Safaris</h3>
             <p>
-              Lorem ipsum dolor sit amet, consec lorem adipi scing elit eps
-              Etiam fermentum tinc idunt.
+            Discover Uganda’s Natural Treasures
+            Journey through the savannahs
             </p>
           </div>
 
@@ -67,10 +67,10 @@ const Home = () => {
             <div className="pillar-icon">
               <FaPenNib />
             </div>
-            <h3>Branding projects</h3>
+            <h3>Cultural Experiences</h3>
             <p>
-              Lorem ipsum dolor sit amet, consec lorem adipi scing elit eps
-              Etiam fermentum tinc idunt.
+            Dive into Uganda’s Rich Heritage
+            Explore vibrant tribes, traditional dances.
             </p>
           </div>
 
@@ -78,10 +78,10 @@ const Home = () => {
             <div className="pillar-icon">
               <FaStar />
             </div>
-            <h3>Promotion & event</h3>
+            <h3>Adventure & Nature</h3>
             <p>
-              Lorem ipsum dolor sit amet, consec lorem adipi scing elit eps
-              Etiam fermentum tinc idunt.
+            Unleash Your Wild Side
+            From hiking the Rwenzori Mountains to white-water.
             </p>
           </div>
 
@@ -89,10 +89,10 @@ const Home = () => {
             <div className="pillar-icon">
               <FaBookmark />
             </div>
-            <h3>Advertising</h3>
+            <h3>Eco-Tourism & Community</h3>
             <p>
-              Lorem ipsum dolor sit amet, consec lorem adipi scing elit eps
-              Etiam fermentum tinc idunt.
+            Travel with Purpose
+            Support local communities and sustainable travel.
             </p>
           </div>
         </div>
@@ -159,7 +159,7 @@ const Home = () => {
               Your browser does not support the video tag.
             </video>
             <div className="video-overlay">
-              <h1 className="video-title">Enjoy EuginiusTours</h1>
+              <h1 className="video-title">Enjoy EugeniusTours</h1>
             </div>
           </div>
         </section>
