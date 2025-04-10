@@ -1,0 +1,137 @@
+/* blog.css */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  .blog-container {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+  /* Hero Section Styles */
+  .hero-section {
+    position: relative;
+    height: 50vh;
+    background-image: url('/blog.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+  }
+  
+  .hero-content {
+    padding: 20px;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /* Content Section Styles */
+  .content-section {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .content-section h2 {
+    font-size: 2.5rem;
+    color: #fca311;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    align-items: center;
+  }
+  
+  .image-gallery {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .gallery-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .text-content {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .text-content p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero-section {
+      height: 40vh;
+    }
+  
+    .hero-content h1 {
+      font-size: 2rem;
+    }
+  
+    .hero-content p {
+      font-size: 1rem;
+    }
+  
+    .content-section h2 {
+      font-size: 2rem;
+    }
+  
+    .content-wrapper {
+      flex-direction: column;
+    }
+  
+    .image-gallery {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero-content h1 {
+      font-size: 1.5rem;
+    }
+  
+    .hero-content p {
+      font-size: 0.9rem;
+    }
+  
+    .content-section h2 {
+      font-size: 1.8rem;
+      margin-top: -30px;
+    }
+  
+    .content-wrapper {
+      margin-top: 10px;
+    }
+  
+    .content-wrapper .text-content {
+      margin-top: 30px;
+    }
+  }
+  

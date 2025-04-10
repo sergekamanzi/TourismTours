@@ -1,0 +1,182 @@
+/* Destination Section Styles */
+.destination-body {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.destination-header h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.destination-header h1 span {
+    font-size: 2.5rem;
+    color: #fca311;
+}
+
+.destination-header p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.destination-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.destination-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.destination-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.destination-info {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.destination-info .location {
+    display: block;
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 500;
+}
+
+/* Map Section Styles */
+.map-section {
+    padding: 40px 20px;
+    background-color: #f9f9f9; /* Light background for contrast */
+}
+
+.map-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.map-text {
+    flex: 1;
+    text-align: left;
+}
+
+.map-text h3 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.map-text p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.map-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.icon-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon-item .icon {
+    font-size: 1.5rem;
+    color: #fca311; /* Matching the highlight color */
+}
+
+.icon-item span {
+    font-size: 1rem;
+    color: #333;
+    font-weight: 500;
+}
+
+.map-embed {
+    flex: 1;
+    max-width: 600px;
+}
+
+.map-embed iframe {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design for Destination Section */
+@media (max-width: 768px) {
+    .destination-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .destination-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .destination-header h1 {
+        font-size: 2rem;
+    }
+
+    .destination-header p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Responsive Design for Map Section */
+@media (max-width: 768px) {
+    .map-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .map-text {
+        text-align: center;
+    }
+
+    .map-icons {
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .map-embed {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .map-text h3 {
+        font-size: 1.5rem;
+    }
+
+    .map-text p {
+        font-size: 0.9rem;
+    }
+
+    .icon-item .icon {
+        font-size: 1.2rem;
+    }
+
+    .icon-item span {
+        font-size: 0.9rem;
+    }
+}
