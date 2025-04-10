@@ -82,7 +82,13 @@ const About = () => {
             </div>
           </div>
 
-          <button className="explore-btn">Click to call</button>
+          <button
+            className="explore-btn"
+            onClick={() => window.open("https://wa.me/256769999773", "_blank")}
+          >
+            Click to call
+          </button>
+
         </div>
 
         <div className="about-right">

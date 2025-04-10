@@ -30,7 +30,13 @@ const Navbar = () => {
       </div>
 
       <div className="nav-right">
-        <button className="call-button">Call Us here</button>
+          <button
+            className="call-button"
+            onClick={() => window.open("https://wa.me/256769999773", "_blank")}
+          >
+            Call Us here
+          </button>
+
         <div className="menu-icon" onClick={toggleMenu}>
           <span></span>
           <span></span>

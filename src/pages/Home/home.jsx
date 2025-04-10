@@ -39,7 +39,13 @@ const Home = () => {
         <div className="hero-overlay">
           <h1 className="hero-title">{slides[currentSlide].title}</h1>
           <div className="hero-underline"></div>
-          <button className="hero-button">Click here to call</button>
+          <button
+          className="hero-button"
+          onClick={() => window.open("https://wa.me/256769999773", "_blank")}
+        >
+          Click here to book
+        </button>
+
         </div>
         <button className="arrow left" onClick={prevSlide}>
           ❮
